@@ -1,0 +1,32 @@
+Explanation of different variables in d3sum:
+
+Complete list of all the extracted variables is included in the file "columns.txt".
+Each column represents either mean or standard deviation for that measurement for
+each specific subject and activity.
+
+Column   Name           Type            Explanation
+1        subject        Character       represents subjects. Values vary from 1 to 
+                                        30.
+2        activityName   Character       represents six different kinds of activities,
+                                        WALKING
+                                        WALKING_UPSTAIRS
+                                        WALKING_DOWNSTAIRS
+                                        SITTING
+                                        STANDING
+                                        LAYING
+3 to 88: Meaning of different variable names can be 'synthesized' from different
+'parts' that form the name. They are:
+        t               Prefix to denote - Time domain signal
+        f               Prefix to denote - Fast Fourier Tranform (FFT) of the signal
+        Acc             Separated Accelaration signal from Accelarometer
+        Body            body accelaration signal
+        Gravity         gravity accelaration signal.
+        Jerk            calculated Jerk signals from accelarometer and Gyrometer
+        mag             Magnitude
+        XYZ             either X- or Y- or Z- comonent
+        mean            mean value of the parameter
+        std             standard deviation of the parameter
+
+All the data in 'd3sum' is summarized mean values of the parameters chosen.
+
+        
